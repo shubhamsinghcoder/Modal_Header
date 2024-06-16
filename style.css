@@ -1,0 +1,97 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+.btn{
+  display: flex;
+  margin: 50px 20px;
+  padding-inline: 35px;
+  padding-block: 15px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #009688;
+  border: none;
+}
+.btn:hover{
+  color: black;
+  background-color: #aaa;
+}
+.main{
+  display: none;
+  flex-direction: column;
+  width: 800px;
+  min-width: 450px;
+  min-height: min-content;
+  margin: 50px auto;
+  animation-name: animatetop;
+  animation-duration: 2s
+}
+@keyframes animatetop {
+  from {
+    top: -300px; opacity: 0
+  }
+  to {
+    top: 200; opacity: 1
+  }
+}
+h1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 20px;
+  padding-block: 20px;
+  background-color: #009688;
+  color: #fff;
+}
+h1 span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 40px;
+ 
+}
+h1 span:hover{
+  color: black;
+  background-color: #aaa;
+  
+}
+.inner-container{
+  position: relative;
+  background-color: #fff;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  width: 800px;
+  min-width: min-content;
+  margin-left: 20px;
+  margin-block: 25px;
+}
+
+.inner-container p{
+  font-size: 18px;
+}
+.inner-container p a{
+  padding-inline: 8px;
+  padding-block: 8px;
+  background-color: #009688;
+  color: #fff;
+  text-decoration: none;
+}
+.inner-container p a:hover{
+  color: black;
+  background-color: #aaa;
+}
+.footer{
+  padding-left: 20px;
+  padding-block: 20px;
+  color: #fff;
+  background-color: #009688;
+  font-size: 18px;
+  font-weight: 600;
+}
